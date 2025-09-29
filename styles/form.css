@@ -1,0 +1,68 @@
+/* General container */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+/* Input fields */
+.form-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+  outline: none;
+}
+
+/* Buttons */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background: #574fd6;
+}
+
+/* Small text / links */
+.form-container .small-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.form-container .small-text a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.form-container .small-text a:hover {
+  text-decoration: underline;
+}

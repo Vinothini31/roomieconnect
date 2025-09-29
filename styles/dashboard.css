@@ -1,0 +1,121 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f5f0ff;
+}
+
+.interests-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.interest-btn {
+  margin: 8px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #9b59b6;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.interest-btn:hover {
+  background: #8e44ad;
+  transform: translateY(-3px);
+}
+
+.interest-btn.selected {
+  background: #d633ff;
+  box-shadow: 0 0 12px rgba(214, 51, 255, 0.6);
+}
+
+.save-btn {
+  margin: 20px auto;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.save-btn:hover {
+  background: #341f97;
+  transform: scale(1.05);
+}
+
+.matches-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.match-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.match-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.match-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ffccff;
+}
+
+.match-card p {
+  margin: 6px 0;
+}
+
+.shared-interests h5 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #ffe4ff;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.interest-tag {
+  background: #8e44ad;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  transition: background 0.3s;
+}
+
+.interest-tag:hover {
+  background: #9b59b6;
+}
