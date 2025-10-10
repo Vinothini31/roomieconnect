@@ -63,4 +63,20 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// ✅ Update profile picture
+router.put("/:id/profile-picture", async (req, res) => {
+  try {
+    const { profilePicture } = req.body;
+    const user = await User.findByIdAndUpdate(
+      req.params.id,
+      { profilePicture },
+      { new: true }
+    );
+    res.json(user);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
 export default router;
