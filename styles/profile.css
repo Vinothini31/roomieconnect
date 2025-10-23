@@ -98,3 +98,21 @@
   border: 2px dashed #b388eb;
   margin-bottom: 1rem;
 }
+.room-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.room-number {
+  background-color: #e0ffe0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #007f00;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.no-room {
+  color: #aaa;
+  font-style: italic;
+}
