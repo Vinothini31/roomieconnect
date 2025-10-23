@@ -41,6 +41,18 @@ export default function Profile() {
         <h2>{user.username}’s Profile</h2>
         <p><strong>Email:</strong> {user.email}</p>
 
+        {/* ✅ Room Info */}
+        {user.roomNumber ? (
+          <div className="room-info">
+            <strong>Room Number:</strong>{" "}
+            <span className="room-number-tag">{user.roomNumber}</span>
+          </div>
+        ) : (
+          <div className="room-info no-room">
+            <strong>Room:</strong> <span>Not Assigned</span>
+          </div>
+        )}
+
         <div className="interests-list">
           <h3>Interests</h3>
           {user.interests && user.interests.length > 0 ? (
