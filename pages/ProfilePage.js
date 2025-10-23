@@ -1,4 +1,3 @@
-// frontend/src/pages/ProfilePage.js
 import React, { useEffect, useState } from "react";
 import api from "../api";
 import "../styles/profile.css";
@@ -77,6 +76,16 @@ export default function ProfilePage() {
 
         <p><strong>Username:</strong> {user.username}</p>
         <p><strong>Email:</strong> {user.email}</p>
+
+        {/* ✅ Room Number Section */}
+        <div className="room-section">
+          <h3>Room</h3>
+          {user.roomNumber ? (
+            <p className="room-number">🏠 Room {user.roomNumber}</p>
+          ) : (
+            <p className="no-room">Not assigned to any room yet</p>
+          )}
+        </div>
 
         <h3>My Interests</h3>
         <div className="interests-list">
