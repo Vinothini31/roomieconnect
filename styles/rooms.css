@@ -1,0 +1,76 @@
+.rooms-container {
+  padding: 20px;
+  background: #929497;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.room-card {
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-card.green {
+  background-color: #27ae60;
+}
+
+.room-card.blue {
+  background-color: #3498db;
+}
+
+.room-card.red {
+  background-color: #e74c3c;
+}
+
+.room-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+.room-buttons button:hover {
+  background: #e4dddd;
+}
+
+.occupant-link {
+  display: block;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
