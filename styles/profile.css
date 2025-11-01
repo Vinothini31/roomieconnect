@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #3a0ca3, #7209b7, #b5179e);
+  background: black;
   color: #fff;
+   font-size: 1.4rem;
   padding: 40px;
 }
 
@@ -14,6 +15,7 @@
   padding: 30px;
   border-radius: 20px;
   width: 400px;
+   font-size: 1.2rem;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
