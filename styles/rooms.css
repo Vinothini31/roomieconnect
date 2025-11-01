@@ -1,6 +1,6 @@
 .rooms-container {
   padding: 20px;
-  background: #929497;
+  background: black;
   min-height: 100vh;
   text-align: center;
 }
@@ -26,15 +26,17 @@
 }
 
 .room-card.green {
-  background-color: #27ae60;
+  background :linear-gradient(90deg, #6a0dad, #000000);
 }
 
 .room-card.blue {
-  background-color: #3498db;
+  background: linear-gradient(99deg, #8e2de2, #080707c5);
+
+
 }
 
 .room-card.red {
-  background-color: #e74c3c;
+  background: linear-gradient(99deg, #36085e, #151313c5);
 }
 
 .room-buttons button {
@@ -61,7 +63,7 @@
 }
 
 .download-btn {
-  background-color: #007bff;
+  background: linear-gradient(99deg, #8e2de2, #0c0c0cc5);
   color: white;
   border: none;
   padding: 10px 14px;
