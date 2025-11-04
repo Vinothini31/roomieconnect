@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api";
-import "../styles/form.css";   // <-- import CSS
+import "../styles/form.css"; // <-- import CSS
 
 export default function Signup() {
   const [form, setForm] = useState({ username: "", email: "", password: "" });
@@ -9,6 +9,23 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // --- Regex validation ---
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*]).{5,}$/;
+
+    if (!emailRegex.test(form.email)) {
+      alert("Please enter a valid Gmail address (must end with @gmail.com).");
+      return;
+    }
+
+    if (!passwordRegex.test(form.password)) {
+      alert(
+        "Password must be at least 5 characters long and include at least one number and one special character."
+      );
+      return;
+    }
+
     try {
       const res = await api.post("/auth/signup", form);
       alert(res.data.message);
@@ -29,7 +46,7 @@ export default function Signup() {
           required
         />
         <input
-          placeholder="Email"
+          placeholder="Gmail Address"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           type="email"
@@ -42,6 +59,9 @@ export default function Signup() {
           type="password"
           required
         />
+        <small className="hint-text">
+          Password must have at least 5 characters, 1 number, and 1 special character.
+        </small>
         <button type="submit">Sign Up</button>
       </form>
       <div className="small-text">
