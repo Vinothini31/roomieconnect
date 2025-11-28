@@ -1,0 +1,88 @@
+/* General container */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: linear-gradient(145deg, #fbe9ff, #fce4ec); /* pink-purple mix */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(186, 104, 200, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #7b1fa2; /* deep purple */
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+ h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #7b1fa2; /* deep purple */
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* Input fields */
+.form-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e1bee7; /* light purple border */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff0f6; /* soft pink */
+  color: #3b2d60;
+  transition: all 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #ba68c8;
+  box-shadow: 0 0 10px rgba(186, 104, 200, 0.4);
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Buttons */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #e040fb, #7b61ff); /* pink → purple */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+  background: linear-gradient(90deg, #d500f9, #6a1b9a);
+  box-shadow: 0 5px 15px rgba(186, 104, 200, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Small text / links */
+.form-container .small-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #8e24aa;
+}
+
+.form-container .small-text a {
+  color: #e040fb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-container .small-text a:hover {
+  text-decoration: underline;
+  color: #6a1b9a;
+}

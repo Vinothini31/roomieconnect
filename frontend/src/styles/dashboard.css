@@ -1,0 +1,136 @@
+.dashboard-container {
+  max-width: flex;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #2c003e);
+  min-height: 100vh;
+  color: #f5f0ff;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffb6ff;
+  text-shadow: 0 0 8px rgba(255, 100, 255, 0.4);
+}
+
+/* Interest Buttons */
+.interests-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.interest-btn {
+  margin: 8px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ff8efb;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.interest-btn:hover {
+  background:linear-gradient(90deg, #d633ff, #ff66c4);
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(255, 100, 255, 0.5);
+}
+
+.interest-btn.selected {
+  background:linear-gradient(90deg, #d633ff, #ff66c4);
+  box-shadow: 0 0 16px rgba(255, 100, 255, 0.7);
+}
+
+/* Save Button */
+.save-btn {
+  margin: 20px auto;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #d633ff, #ff66c4);
+  color: white;
+  border: none;
+  
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 100, 255, 0.7);
+}
+
+/* Matches */
+.matches-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.match-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 100, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(6px);
+}
+
+.match-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 20px rgba(255, 100, 255, 0.3);
+}
+
+.match-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ff9fff;
+}
+
+.match-card p {
+  margin: 6px 0;
+  color: #d9b3ff;
+}
+
+/* Shared Interests */
+.shared-interests h5 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #ffb3ff;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.interest-tag {
+  background: linear-gradient(90deg, #d633ff, #ff66c4);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.interest-tag:hover {
+  transform: scale(1.1);
+}
